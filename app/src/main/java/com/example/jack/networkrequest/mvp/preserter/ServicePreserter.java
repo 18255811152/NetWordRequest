@@ -2,11 +2,12 @@ package com.example.jack.networkrequest.mvp.preserter;
 
 import android.content.Context;
 
-import com.example.jack.view.base.BasePreserter;
-import com.example.jack.view.base.IBaseView;
-import com.example.jack.view.mvp.moder.ServiceMode.ServiceMode;
-import com.example.jack.view.mvp.view.IIPView;
-import com.example.jack.view.net.rx.ProgressSubscriber;
+
+import com.example.jack.networkrequest.base.BasePreserter;
+import com.example.jack.networkrequest.base.IBaseView;
+import com.example.jack.networkrequest.mvp.moder.ServiceMode.ServiceMode;
+import com.example.jack.networkrequest.mvp.view.IIPView;
+import com.example.jack.networkrequest.net.rx.ProgressSubscriber;
 
 import rx.Subscription;
 

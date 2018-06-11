@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.os.Handler;
 import android.os.Message;
 
-import com.example.jack.view.R;
+import com.example.jack.networkrequest.R;
 
 
 public class ProgressDialogHandler extends Handler {

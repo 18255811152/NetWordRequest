@@ -13,9 +13,6 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-/**
- * Created by benson on 17-12-28.
- */
 
 public class SSLUtil {
     /**
@@ -58,8 +55,6 @@ public class SSLUtil {
             return new X509Certificate[0];
         }
     }
-
-
 
 
     private static class TrustAllHostnameVerifier implements HostnameVerifier {

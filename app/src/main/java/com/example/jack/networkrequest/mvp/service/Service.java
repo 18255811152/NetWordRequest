@@ -1,7 +1,8 @@
 package com.example.jack.networkrequest.mvp.service;
 
-import com.example.jack.view.bean.TestServiceIp;
-import com.example.jack.view.net.HttpResult;
+
+import com.example.jack.networkrequest.bean.TestServiceIp;
+import com.example.jack.networkrequest.net.HttpResult;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;

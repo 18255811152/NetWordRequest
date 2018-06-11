@@ -1,9 +1,10 @@
 package com.example.jack.networkrequest.mvp.moder.ServiceMode;
 
-import com.example.jack.view.bean.TestServiceIp;
-import com.example.jack.view.mvp.moder.BaseModer;
-import com.example.jack.view.mvp.service.Service;
-import com.example.jack.view.net.RetrofitHelper;
+
+import com.example.jack.networkrequest.bean.TestServiceIp;
+import com.example.jack.networkrequest.mvp.moder.BaseModer;
+import com.example.jack.networkrequest.mvp.service.Service;
+import com.example.jack.networkrequest.net.RetrofitHelper;
 
 import rx.Subscriber;
 import rx.Subscription;

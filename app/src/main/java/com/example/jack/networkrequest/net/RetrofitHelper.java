@@ -1,8 +1,8 @@
 package com.example.jack.networkrequest.net;
 
 
-import com.example.jack.view.BuildConfig;
-import com.example.jack.view.util.NullOnEmptyConverterFactory;
+import com.example.jack.networkrequest.BuildConfig;
+import com.example.jack.networkrequest.util.NullOnEmptyConverterFactory;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

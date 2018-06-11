@@ -1,7 +1,8 @@
 package com.example.jack.networkrequest.mvp.moder;
 
-import com.example.jack.view.net.HttpResult;
-import com.example.jack.view.util.ToastUtil;
+
+import com.example.jack.networkrequest.net.HttpResult;
+import com.example.jack.networkrequest.util.ToastUtil;
 
 import rx.Observable;
 import rx.Subscriber;
