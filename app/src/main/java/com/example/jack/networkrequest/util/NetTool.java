@@ -20,7 +20,6 @@ import okhttp3.Response;
 
 /**
  * 网络连接工具
- * Created by fei on 16-10-16.
  */
 public final class NetTool {
 
@@ -48,6 +47,7 @@ public final class NetTool {
 
     /**
      * 检查当前是否连接
+     *
      * @return true表示当前网络处于连接状态，否则返回false
      */
     public static boolean isConnected(Context context) {
@@ -59,6 +59,7 @@ public final class NetTool {
 
     /**
      * 对大数据传输时，需要调用该方法做出判断，如果流量敏感，应该提示用户
+     *
      * @return true表示流量敏感，false表示不敏感
      */
     public static boolean isActiveNetworkMetered(Context context) {
@@ -119,6 +120,7 @@ public final class NetTool {
 
     /**
      * 功能：检测当前URL是否可连接或是否有效
+     *
      * @param domain 指定URL网络地址
      * @return URL
      */
@@ -129,18 +131,18 @@ public final class NetTool {
         if (!TextUtils.isEmpty(domain)) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url(httpUrl(domain)+"/__check").get().build();
+                Request request = new Request.Builder().url(httpUrl(domain) + "/__check").get().build();
                 Log.i("------>", domain);
-                if(!isStop) {
+                if (!isStop) {
                     Response response = client.newCall(request).execute();
-                    if(response.isSuccessful()){
-                        isStop=true;
-                        Log.d("TIME", domain+"：检测成功"+response.message());
+                    if (response.isSuccessful()) {
+                        isStop = true;
+                        Log.d("TIME", domain + "：检测成功" + response.message());
                         return true;
-                    }else{
-                        Log.d("TIME", domain+"：检测失败");
+                    } else {
+                        Log.d("TIME", domain + "：检测失败");
                     }
-                }else {
+                } else {
                     Log.d("TIME", "取消检测");
                 }
             } catch (Exception ex) {

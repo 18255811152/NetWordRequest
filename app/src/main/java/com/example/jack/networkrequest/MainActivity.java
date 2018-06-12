@@ -2,8 +2,9 @@ package com.example.jack.networkrequest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
-import com.example.jack.networkrequest.base.IBaseView;
+import com.example.jack.networkrequest.bean.TestServiceIp;
 import com.example.jack.networkrequest.mvp.preserter.ServicePreserter;
 import com.example.jack.networkrequest.mvp.view.IIPView;
 
@@ -24,7 +25,14 @@ public class MainActivity extends AppCompatActivity implements IIPView {
 
     @Override
     public void onResult(Object o) {
+        TestServiceIp testServiceIp = (TestServiceIp) o;
+        Log.e("TAG", "testServiceIp" + testServiceIp.getArea());
+    }
 
 
+    @Override
+    protected void onDestroy() {
+        servicePreserter.onDestory();
+        super.onDestroy();
     }
 }

@@ -13,7 +13,7 @@ import rx.Subscription;
 public class ServiceMode extends BaseModer implements IServiceMode {
     @Override
     public Subscription getServiceId(Subscriber subscriber, String ip) {
-        rx.Observable<TestServiceIp> observable = RetrofitHelper.getService(Service.class).getServiceIp(ip).map(new HttpResultFunc<TestServiceIp>());
+        rx.Observable<TestServiceIp> observable = RetrofitHelper.getService(Service.class).getServiceIp(ip).map(new HttpResultFunc<>());
         return toSubscribe(observable, subscriber);
     }
 }
